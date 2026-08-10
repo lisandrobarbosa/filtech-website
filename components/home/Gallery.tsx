@@ -79,7 +79,7 @@ export default function Gallery() {
                 src={project.image}
                 alt={project.title}
                 fill
-                className="w-full h-full bg-gray-800 flex items-center justify-center  text-black text-lg   object-cover transition duration-500 group-hover:scale-110"
+                className="object-cover transition duration-500 group-hover:scale-110"
               />
 
               {/* Overlay */}
