@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   MapPin,
   Phone,
@@ -30,16 +31,15 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white border-t border-yellow-500/20">
 
+      {/* Conteúdo principal */}
       <div className="max-w-7xl mx-auto px-6 py-16">
 
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Empresa */}
-
           <div>
-
             <Link
-              href="https://lisandrobarbosa.github.io/filtech-website/"
+              href="#"
               className="text-3xl font-bold text-yellow-500"
             >
               FILTECH
@@ -50,46 +50,63 @@ export default function Footer() {
               residências, empresas e patrimónios.
             </p>
 
-            
+            {/* Redes sociais */}
             <div className="flex gap-3 mt-7">
 
-            <a
+              <a
                 href="#"
                 aria-label="Facebook"
                 className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-sm font-bold hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
-            >
+              >
                 FB
-            </a>
+              </a>
 
-            <a
+              <a
                 href="#"
                 aria-label="Instagram"
                 className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-sm font-bold hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
-            >
+              >
                 IG
-            </a>
+              </a>
 
-            <a
+              <a
                 href="#"
                 aria-label="LinkedIn"
                 className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-sm font-bold hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
-            >
+              >
                 IN
-            </a>
+              </a>
 
             </div>
+          </div>
 
+          {/* Links rápidos */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">
+              Links Rápidos
+            </h3>
+
+            <ul className="space-y-4">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-yellow-500 transition"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Serviços */}
-
           <div>
-
             <h3 className="text-lg font-semibold mb-6">
               Serviços
             </h3>
 
             <ul className="space-y-4">
-
               {services.map((service) => (
                 <li
                   key={service}
@@ -98,15 +115,11 @@ export default function Footer() {
                   {service}
                 </li>
               ))}
-
             </ul>
-
           </div>
 
           {/* Contactos */}
-
           <div>
-
             <h3 className="text-lg font-semibold mb-6">
               Contactos
             </h3>
@@ -114,7 +127,6 @@ export default function Footer() {
             <div className="space-y-5">
 
               <div className="flex gap-3">
-
                 <MapPin
                   size={20}
                   className="text-yellow-500 shrink-0"
@@ -123,11 +135,9 @@ export default function Footer() {
                 <span className="text-gray-400">
                   Luanda, Angola
                 </span>
-
               </div>
 
               <div className="flex gap-3">
-
                 <Phone
                   size={20}
                   className="text-yellow-500 shrink-0"
@@ -136,11 +146,9 @@ export default function Footer() {
                 <span className="text-gray-400">
                   +244 000 000 000
                 </span>
-
               </div>
 
               <div className="flex gap-3">
-
                 <Mail
                   size={20}
                   className="text-yellow-500 shrink-0"
@@ -149,19 +157,15 @@ export default function Footer() {
                 <span className="text-gray-400">
                   contacto@filtech.ao
                 </span>
-
               </div>
 
             </div>
-
           </div>
 
         </div>
-
       </div>
 
-      {/* Parte inferior */}
-
+      {/* Rodapé inferior */}
       <div className="border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
