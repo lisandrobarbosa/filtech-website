@@ -88,6 +88,13 @@ export default function Gallery() {
               
               */}
 
+
+              <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+                    <span className="text-gray-400 text-lg">
+                    Imagem do Produto
+                    </span>
+                </div>
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition duration-500" />
 
