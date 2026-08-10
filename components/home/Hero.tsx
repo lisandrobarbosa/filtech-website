@@ -36,7 +36,7 @@ export default function Hero() {
         {/* Imagem */}
         <div className="flex justify-center">
           <img
-            src="../images/hero.jpg"
+            src="/filtech-website/images/hero.jpg"
             alt="Segurança Eletrónica"
             className="w-full max-w-xl rounded-3xl"
           />
