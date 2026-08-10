@@ -31,13 +31,13 @@ export default function Products() {
   return (
     <section
       id="produtos"
-      className="bg-gray-950 text-white py-24"
+      className="bg-gray-950 text-white py-16 lg:py-24"
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 text-center">
 
-          <span className="text-[#B5923E] uppercase tracking-widest">
+          <span className="text-[#B5923E] uppercase tracking-widest text-3xl sm:text-4xl font-bold mt-4">
             Produtos
           </span>
 

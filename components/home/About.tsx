@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="bg-black text-white py-24"
+      className="bg-black text-white py-16 lg:py-24"
     >
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -19,11 +19,11 @@ export default function About() {
 
         <div>
 
-          <span className="text-[#B5923E] uppercase tracking-widest">
+          <span className="text-[#B5923E] uppercase tracking-widest   text-3xl sm:text-4xl font-bold mt-4">
             Sobre Nós
           </span>
 
-          <h2 className="text-4xl font-bold mt-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mt-4">
             Porque escolher a FILTECH?
           </h2>
 
