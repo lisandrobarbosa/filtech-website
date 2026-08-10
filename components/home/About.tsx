@@ -58,7 +58,7 @@ export default function About() {
         <div className="flex justify-center">
 
           <img
-            src="../images/about.jpg"
+            src="/filtech-website/images/about.jpg"
             alt="FILTECH"
             className="w-full max-w-xl rounded-3xl"
           />
