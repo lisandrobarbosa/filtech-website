@@ -5,25 +5,25 @@ const products = [
     id: 1,
     name: "Câmara Hikvision",
     price: "35.000 Kz",
-    image: "public/products/camera.jpg",
+    image: "/products/camera.jpg",
   },
   {
     id: 2,
     name: "Fechadura Inteligente",
     price: "120.000 Kz",
-    image: "public/products/lock.jpg",
+    image: "/products/lock.jpg",
   },
   {
     id: 3,
     name: "Vídeo Porteiro",
     price: "95.000 Kz",
-    image: "public/products/video-door.jpg",
+    image: "/products/video-door.jpeg",
   },
   {
     id: 4,
     name: "Cancela Automática",
     price: "450.000 Kz",
-    image: "public/products/gate.jpg",
+    image: "/products/gate.jpg",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Products() {
 
         <div className="text-center">
 
-          <span className="text-yellow-500 uppercase tracking-widest">
+          <span className="text-[#B5923E] uppercase tracking-widest">
             Produtos
           </span>
 
@@ -57,15 +57,19 @@ export default function Products() {
 
             <div
               key={product.id}
-              className="bg-black rounded-2xl overflow-hidden border border-gray-800 hover:border-yellow-500 transition duration-300"
+              className="bg-black rounded-2xl overflow-hidden border border-gray-800 hover:border-[#2A1B00] transition duration-300"
             >
 
-              <div className="relative w-full h-60">
+              <div className="relative w-full ">
 
                 <div className="h-60 bg-gray-800 flex items-center justify-center rounded-t-2xl">
-                  <span className="text-yellow-500 text-lg font-semibold">
-                   {product.image}
-                  </span>
+                  
+                  <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+                    <span className="text-gray-400 text-lg">
+                    Imagem do Produto
+                    </span>
+                  </div>
+
                 </div>
 
               </div>
@@ -76,11 +80,11 @@ export default function Products() {
                   {product.name}
                 </h3>
 
-                <p className="text-yellow-500 text-2xl font-bold mt-3">
+                <p className="text-[#B5923E] text-2xl font-bold mt-3">
                   {product.price}
                 </p>
 
-                <button className="mt-6 w-full bg-yellow-500 text-black py-3 rounded-xl font-semibold hover:bg-yellow-400 transition">
+                <button className="mt-6 w-full bg-[#B5923E] text-black py-3 rounded-xl font-semibold hover:bg-[#2A1B00] transition">
                   Ver Produto
                 </button>
 

@@ -56,7 +56,7 @@ export default function Services() {
 
         <div className="text-center mb-16">
 
-          <span className="text-yellow-500 uppercase tracking-widest">
+          <span className="text-[#B5923E] uppercase tracking-widest">
             Serviços
           </span>
 
@@ -81,10 +81,10 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="bg-black rounded-2xl p-8 border border-gray-800 hover:border-yellow-500 hover:-translate-y-2 transition duration-300"
+                className="bg-black rounded-2xl p-8 border border-gray-800 hover:border-[#2A1B00] hover:-translate-y-2 transition duration-300"
               >
 
-                <div className="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-[#B5923E] flex items-center justify-center mb-6">
 
                   <Icon size={32} className="text-black" />
 

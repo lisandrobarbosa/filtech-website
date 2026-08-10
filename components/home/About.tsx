@@ -19,7 +19,7 @@ export default function About() {
 
         <div>
 
-          <span className="text-yellow-500 uppercase tracking-widest">
+          <span className="text-[#B5923E] uppercase tracking-widest">
             Sobre Nós
           </span>
 
@@ -41,7 +41,7 @@ export default function About() {
                 key={item}
                 className="flex items-center gap-4"
               >
-                <CheckCircle className="text-yellow-500" />
+                <CheckCircle className="text-[#B5923E]" />
 
                 <span>{item}</span>
 
@@ -60,7 +60,7 @@ export default function About() {
           <img
             src="../images/about.jpg"
             alt="FILTECH"
-            className="shadow-2xl h-[500] w-full max-w-xl rounded-3xl"
+            className="w-full max-w-xl rounded-3xl"
           />
 
         </div>
