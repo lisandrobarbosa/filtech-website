@@ -5,37 +5,37 @@ const projects = [
     id: 1,
     title: "Sistema de Vigilância",
     category: "Câmaras de Segurança",
-    image: "/gallery/camera.jpg",
+    image: "/filtech-website/gallery/camera.jpg",
   },
   {
     id: 2,
     title: "Proteção Perimetral",
     category: "Cerca Elétrica",
-    image: "/gallery/cerca.jpg",
+    image: "/filtech-website/gallery/cerca.jpg",
   },
   {
     id: 3,
     title: "Controlo de Acesso",
     category: "Fechaduras Eletrónicas",
-    image: "/gallery/fechadura.jpg",
+    image: "/filtech-website/gallery/fechadura.jpg",
   },
   {
     id: 4,
     title: "Entrada Automática",
     category: "Cancelas",
-    image: "/gallery/cancela.jpg",
+    image: "/filtech-website/gallery/cancela.jpg",
   },
   {
     id: 5,
     title: "Vídeo Porteiro",
     category: "Intercomunicação",
-    image: "/gallery/video-porteiro.jpg",
+    image: "/filtech-website/gallery/video-porteiro.jpg",
   },
   {
     id: 6,
     title: "Segurança Eletrónica",
     category: "Instalação",
-    image: "/gallery/instalacao.jpg",
+    image: "/filtech-website/gallery/instalacao.jpg",
   },
 ];
 
