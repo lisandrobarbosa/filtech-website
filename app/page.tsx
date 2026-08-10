@@ -5,18 +5,27 @@ import About from "@/components/home/About";
 import Products from "@/components/home/Products";
 import Gallery from "@/components/home/Gallery";
 import Contact from "@/components/home/Contact";
+import Footer from "@/components/layout/Footer";
 
 
 export default function Home() {
   return (
     <main>
       <Navbar />
+
       <Hero />
+
       <About />
+
       <Services />
+
       <Products />
+
       <Gallery />
+
       <Contact />
+      
+      <Footer />
     </main>
   );
 }
