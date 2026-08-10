@@ -91,7 +91,7 @@ export default function Gallery() {
 
               <div className="w-full h-full bg-gray-800 flex items-center justify-center">
                     <span className="text-gray-400 text-lg">
-                    Imagem do Produto
+                    Imagem de projetos
                     </span>
                 </div>
 
