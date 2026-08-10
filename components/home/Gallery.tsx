@@ -5,37 +5,37 @@ const projects = [
     id: 1,
     title: "Sistema de Vigilância",
     category: "Câmaras de Segurança",
-    image: "/filtech-website/gallery/camera.jpg",
+    image: "Imagem de projetos",
   },
   {
     id: 2,
     title: "Proteção Perimetral",
     category: "Cerca Elétrica",
-    image: "/filtech-website/gallery/cerca.jpg",
+    image: "Imagem de projetos",
   },
   {
     id: 3,
     title: "Controlo de Acesso",
     category: "Fechaduras Eletrónicas",
-    image: "/filtech-website/gallery/fechadura.jpg",
+    image: "Imagem de projetos",
   },
   {
     id: 4,
     title: "Entrada Automática",
     category: "Cancelas",
-    image: "/filtech-website/gallery/cancela.jpg",
+    image: "Imagem de projetos",
   },
   {
     id: 5,
     title: "Vídeo Porteiro",
     category: "Intercomunicação",
-    image: "/filtech-website/gallery/video-porteiro.jpg",
+    image: "Imagem de projetos",
   },
   {
     id: 6,
     title: "Segurança Eletrónica",
     category: "Instalação",
-    image: "/filtech-website/gallery/instalacao.jpg",
+    image: "Imagem de projetos",
   },
 ];
 
@@ -74,12 +74,12 @@ export default function Gallery() {
               key={project.id}
               className="group relative h-80 overflow-hidden rounded-2xl border border-gray-800"
             >
-
+                
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition duration-500 group-hover:scale-110"
+                className="w-full h-full bg-gray-800 flex items-center justify-center  text-gray-400 text-lg   object-cover transition duration-500 group-hover:scale-110"
               />
 
               {/* Overlay */}
