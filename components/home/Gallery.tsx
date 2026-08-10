@@ -75,12 +75,18 @@ export default function Gallery() {
               className="group relative h-80 overflow-hidden rounded-2xl border border-gray-800"
             >
 
+              {/*  
+              
+              ADICIONAR FUTURA IMAGEM
+
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
                 className="object-cover transition duration-500 group-hover:scale-110"
-              />
+              /> 
+              
+              */}
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition duration-500" />
